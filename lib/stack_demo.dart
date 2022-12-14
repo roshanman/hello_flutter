@@ -5,7 +5,7 @@ class StackWidgetDemo extends BaseDemo {
   const StackWidgetDemo({Key? key, required String title}) : super(key: key, title: title);
 
   @override
-  Widget bodyWidget() {
+  Widget bodyWidget({required BuildContext context}) {
     return Center(
       child: Stack(
         fit: StackFit.passthrough, // StackFit.expand

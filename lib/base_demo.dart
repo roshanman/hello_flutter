@@ -5,21 +5,21 @@ class BaseDemo extends StatelessWidget {
 
   const BaseDemo({Key? key, required this.title}) : super(key: key);
 
-  Widget bodyWidget() {
+  Widget bodyWidget({required BuildContext context}) {
     return Center(child: Text(title));
   }
 
-  bool showFloatActionButton() {
+  bool showFloatActionButton({required BuildContext context}) {
     return true;
   }
 
-  void floatingActionButtonAction() {}
+  void floatingActionButtonAction({required BuildContext context}) {}
 
-  Widget? floatActionButtonIcon() {
+  Widget? floatActionButtonIcon({required BuildContext context}) {
     return null;
   }
 
-  Widget? appBar() {
+  Widget? appBar({required BuildContext context}) {
     return null;
   }
 
@@ -27,13 +27,15 @@ class BaseDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: appBar() ?? Text(title),
+        title: appBar(context: context) ?? Text(title),
       ),
-      body: bodyWidget(),
-      floatingActionButton: showFloatActionButton()
+      body: bodyWidget(context: context),
+      floatingActionButton: showFloatActionButton(context: context)
           ? FloatingActionButton(
-              onPressed: floatingActionButtonAction,
-              child: floatActionButtonIcon() ?? const Icon(Icons.add),
+              onPressed: () {
+                floatingActionButtonAction(context: context);
+              },
+              child: floatActionButtonIcon(context: context) ?? const Icon(Icons.add),
             )
           : null,
     );
