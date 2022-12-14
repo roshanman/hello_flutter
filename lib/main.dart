@@ -40,7 +40,7 @@ class MyHomePage extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (BuildContext context) => demo.page),
+                MaterialPageRoute(builder: (BuildContext context) => demo),
               );
             },
             child: ListTile(
@@ -50,7 +50,7 @@ class MyHomePage extends StatelessWidget {
           );
         },
         separatorBuilder: (context, index) {
-          return Divider(color: Colors.red[200]);
+          return Divider(color: Colors.grey[300]);
         },
         itemCount: allDemos.length,
       ),
