@@ -5,6 +5,7 @@ import 'color_filtered.dart';
 import 'image.dart';
 import 'circel_avatar.dart';
 import 'center.dart';
+import 'tooltip.dart';
 
 final List<BaseDemo> allDemos = [
   const StackWidgetDemo(title: "Stack Widget"),
@@ -13,6 +14,7 @@ final List<BaseDemo> allDemos = [
   const ImageDemo(title: "Image"),
   const CircleAvatarDemo(title: "CircleAvatar"),
   const CeneterDemo(title: "Center Widget"),
+  const TooltipDemo(title: "Tooltip Widget"),
   ...List.generate(20, (index) {
     return BaseDemo(
       title: "Demo $index",
