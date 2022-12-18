@@ -11,6 +11,7 @@ import 'safe_area.dart';
 import 'opacity.dart';
 import 'hero.dart';
 import 'fadein_image.dart';
+import 'interactive_viewer.dart';
 
 final List<BaseDemo> allDemos = [
   const StackWidgetDemo(title: "Stack Widget"),
@@ -25,6 +26,7 @@ final List<BaseDemo> allDemos = [
   const OpacityDemo(title: "Opacity"),
   const HeroDemo(title: "Hero"),
   const FadeInImageDemo(title: "FadeImage"),
+  const InteractiveViewerDemo(title: "InteractiveViewer"),
   ...List.generate(20, (index) {
     return BaseDemo(
       title: "Demo $index",
