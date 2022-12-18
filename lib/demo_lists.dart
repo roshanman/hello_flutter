@@ -7,6 +7,7 @@ import 'circel_avatar.dart';
 import 'center.dart';
 import 'tooltip.dart';
 import 'aspect_ratio.dart';
+import 'safe_area.dart';
 
 final List<BaseDemo> allDemos = [
   const StackWidgetDemo(title: "Stack Widget"),
@@ -17,6 +18,7 @@ final List<BaseDemo> allDemos = [
   const CeneterDemo(title: "Center Widget"),
   const TooltipDemo(title: "Tooltip Widget"),
   const AspectRatioDemo(title: "Aspect Ratio Widget"),
+  const SafeAreaDemo(title: "Safe Area"),
   ...List.generate(20, (index) {
     return BaseDemo(
       title: "Demo $index",
