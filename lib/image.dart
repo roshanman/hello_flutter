@@ -6,23 +6,20 @@ class ImageDemo extends BaseDemo {
 
   @override
   Widget bodyWidget({required BuildContext context}) {
-    const imgUrl =
-        'https://img2.baidu.com/it/u=2946844257,1117642570&fm=253&fmt=auto&app=138&f=JPEG?w=1500&h=725';
-
     return SingleChildScrollView(
       child: Column(
         children: [
           FadeInImage.assetNetwork(
             placeholder: 'images/demo_image.png',
             placeholderScale: 2.0,
-            image: imgUrl,
+            image: BaseDemo.imgUrl,
             alignment: Alignment.center,
           ),
           const Divider(),
           Image.asset('images/demo_image.png'),
           const Divider(),
           Image.network(
-            imgUrl,
+            BaseDemo.imgUrl,
             fit: BoxFit.fitWidth,
           ),
           const Divider(),
@@ -30,7 +27,7 @@ class ImageDemo extends BaseDemo {
             width: 300,
             height: 300,
             child: Image.network(
-              imgUrl,
+              BaseDemo.imgUrl,
               fit: BoxFit.fill,
             ),
           )

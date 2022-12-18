@@ -9,6 +9,7 @@ import 'tooltip.dart';
 import 'aspect_ratio.dart';
 import 'safe_area.dart';
 import 'opacity.dart';
+import 'hero.dart';
 
 final List<BaseDemo> allDemos = [
   const StackWidgetDemo(title: "Stack Widget"),
@@ -21,6 +22,7 @@ final List<BaseDemo> allDemos = [
   const AspectRatioDemo(title: "Aspect Ratio Widget"),
   const SafeAreaDemo(title: "Safe Area"),
   const OpacityDemo(title: "Opacity"),
+  const HeroDemo(title: "Hero"),
   ...List.generate(20, (index) {
     return BaseDemo(
       title: "Demo $index",

@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 class BaseDemo extends StatelessWidget {
   final String title;
 
+  static const imgUrl =
+      'https://img2.baidu.com/it/u=2946844257,1117642570&fm=253&fmt=auto&app=138&f=JPEG?w=1500&h=725';
+
   const BaseDemo({Key? key, required this.title}) : super(key: key);
 
   Widget bodyWidget({required BuildContext context}) {

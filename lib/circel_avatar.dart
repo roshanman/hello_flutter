@@ -6,9 +6,6 @@ class CircleAvatarDemo extends BaseDemo {
 
   @override
   Widget bodyWidget({required BuildContext context}) {
-    const imgUrl =
-        'https://img2.baidu.com/it/u=2946844257,1117642570&fm=253&fmt=auto&app=138&f=JPEG?w=1500&h=725';
-
     return SingleChildScrollView(
       child: Center(
         child: Column(
@@ -22,7 +19,7 @@ class CircleAvatarDemo extends BaseDemo {
                 child: AspectRatio(
                   aspectRatio: 1.0,
                   child: Image.network(
-                    imgUrl,
+                    BaseDemo.imgUrl,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -44,7 +41,7 @@ class CircleAvatarDemo extends BaseDemo {
                   builder: (context, constraints) {
                     print("object is $constraints");
                     return Image.network(
-                      imgUrl,
+                      BaseDemo.imgUrl,
                       fit: BoxFit.cover,
                     );
                   },
