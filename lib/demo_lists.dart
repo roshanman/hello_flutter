@@ -12,8 +12,10 @@ import 'opacity.dart';
 import 'hero.dart';
 import 'fadein_image.dart';
 import 'interactive_viewer.dart';
+import 'clip_r_rect.dart';
 
 final List<BaseDemo> allDemos = [
+  const ClipRRectDemo(title: "ClipRRect"),
   const StackWidgetDemo(title: "Stack Widget"),
   const StadiumBorderShapeDemo(title: "Stadium Border Shape"),
   const ColorFilteredDemo(title: "Color Filterd"),
