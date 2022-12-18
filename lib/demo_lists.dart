@@ -10,6 +10,7 @@ import 'aspect_ratio.dart';
 import 'safe_area.dart';
 import 'opacity.dart';
 import 'hero.dart';
+import 'fadein_image.dart';
 
 final List<BaseDemo> allDemos = [
   const StackWidgetDemo(title: "Stack Widget"),
@@ -23,6 +24,7 @@ final List<BaseDemo> allDemos = [
   const SafeAreaDemo(title: "Safe Area"),
   const OpacityDemo(title: "Opacity"),
   const HeroDemo(title: "Hero"),
+  const FadeInImageDemo(title: "FadeImage"),
   ...List.generate(20, (index) {
     return BaseDemo(
       title: "Demo $index",
