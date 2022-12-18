@@ -44,3 +44,14 @@ class BaseDemo extends StatelessWidget {
     );
   }
 }
+
+extension LayoutBuildDebug on Widget {
+  Widget debugLayoutConstraints() {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        print("$this constraints is: $constraints ");
+        return this;
+      },
+    );
+  }
+}
