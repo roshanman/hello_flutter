@@ -20,8 +20,10 @@ import 'place_holder.dart';
 import 'rich_text.dart';
 import 'activity_indicator.dart';
 import 'circular_progress_indicator.dart';
+import 'linear_progress_indicator.dart';
 
 final List<BaseDemo> allDemos = [
+  const LinearProgressIndicatorDemo(title: "LinearProgressIndicator"),
   const CircularProgressIndicatorDemo(title: "CircularProgressIndicator"),
   const ActivityIndicatorDemo(title: "ActivityIndicator"),
   const RichTextDemo(title: "RichTextDemo"),
