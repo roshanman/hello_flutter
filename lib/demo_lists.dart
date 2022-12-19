@@ -22,8 +22,10 @@ import 'activity_indicator.dart';
 import 'circular_progress_indicator.dart';
 import 'linear_progress_indicator.dart';
 import 'selectable_text.dart';
+import 'snakebar.dart';
 
 final List<BaseDemo> allDemos = [
+  const SnackBarDemo(title: "SnackBar"),
   const SelectableTextDemo(title: "SelectableText"),
   const LinearProgressIndicatorDemo(title: "LinearProgressIndicator"),
   const CircularProgressIndicatorDemo(title: "CircularProgressIndicator"),
