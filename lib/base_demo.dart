@@ -26,6 +26,22 @@ class BaseDemo extends StatelessWidget {
     return null;
   }
 
+  bool showDrawer() {
+    return false;
+  }
+
+  Widget? drawer({required BuildContext context}) {
+    return const Drawer(child: Text('drawer'));
+  }
+
+  bool showEndDrawer() {
+    return false;
+  }
+
+  Widget? endDrawer({required BuildContext context}) {
+    return const Drawer(child: Text('drawer'));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,6 +49,8 @@ class BaseDemo extends StatelessWidget {
         title: appBar(context: context) ?? Text(title),
       ),
       body: bodyWidget(context: context),
+      drawer: showDrawer() ? drawer(context: context) : null,
+      endDrawer: showEndDrawer() ? endDrawer(context: context) : null,
       floatingActionButton: showFloatActionButton(context: context)
           ? FloatingActionButton(
               onPressed: () {
