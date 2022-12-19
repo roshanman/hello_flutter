@@ -44,7 +44,7 @@ class MyHomePage extends StatelessWidget {
               );
             },
             child: ListTile(
-              title: Text(demo.title, style: const TextStyle(fontSize: 16)),
+              title: Text("${index + 1}. ${demo.title}", style: const TextStyle(fontSize: 16)),
               trailing: const Icon(Icons.arrow_forward_ios),
             ),
           );
