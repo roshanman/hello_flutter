@@ -18,8 +18,10 @@ import 'clip_rect.dart';
 import 'clip_path.dart';
 import 'place_holder.dart';
 import 'rich_text.dart';
+import 'activity_indicator.dart';
 
 final List<BaseDemo> allDemos = [
+  const ActivityIndicatorDemo(title: "ActivityIndicator"),
   const RichTextDemo(title: "RichTextDemo"),
   const PlaceHolderDemo(title: "PlaceHolder"),
   const ClipPathDemo(title: "ClipPath"),
