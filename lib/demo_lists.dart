@@ -14,8 +14,10 @@ import 'fadein_image.dart';
 import 'interactive_viewer.dart';
 import 'clip_r_rect.dart';
 import 'clip_oval.dart';
+import 'clip_rect.dart';
 
 final List<BaseDemo> allDemos = [
+  const ClipRectDemo(title: "ClipRect"),
   const ClipOvalDemo(title: "ClipOval"),
   const ClipRRectDemo(title: "ClipRRect"),
   const StackWidgetDemo(title: "Stack Widget"),
