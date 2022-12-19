@@ -17,8 +17,10 @@ import 'clip_oval.dart';
 import 'clip_rect.dart';
 import 'clip_path.dart';
 import 'place_holder.dart';
+import 'rich_text.dart';
 
 final List<BaseDemo> allDemos = [
+  const RichTextDemo(title: "RichTextDemo"),
   const PlaceHolderDemo(title: "PlaceHolder"),
   const ClipPathDemo(title: "ClipPath"),
   const ClipRectDemo(title: "ClipRect"),
