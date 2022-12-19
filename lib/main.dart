@@ -40,7 +40,7 @@ class MyHomePage extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (BuildContext context) => demo),
+                MaterialPageRoute(builder: (BuildContext context) => demo.getDemoPage()),
               );
             },
             child: ListTile(

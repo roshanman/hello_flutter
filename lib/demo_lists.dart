@@ -24,8 +24,10 @@ import 'linear_progress_indicator.dart';
 import 'selectable_text.dart';
 import 'snakebar.dart';
 import 'drawer.dart';
+import 'animated_icon.dart';
 
-final List<BaseDemo> allDemos = [
+final List<MyDemo> allDemos = [
+  const AnimatedIconDemo(title: "AnimatedIcon"),
   const DrawerDemo(title: "Drawer"),
   const SnackBarDemo(title: "SnackBar"),
   const SelectableTextDemo(title: "SelectableText"),
