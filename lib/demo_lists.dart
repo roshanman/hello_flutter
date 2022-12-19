@@ -15,8 +15,10 @@ import 'interactive_viewer.dart';
 import 'clip_r_rect.dart';
 import 'clip_oval.dart';
 import 'clip_rect.dart';
+import 'clip_path.dart';
 
 final List<BaseDemo> allDemos = [
+  const ClipPathDemo(title: "ClipPath"),
   const ClipRectDemo(title: "ClipRect"),
   const ClipOvalDemo(title: "ClipOval"),
   const ClipRRectDemo(title: "ClipRRect"),
