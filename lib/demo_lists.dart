@@ -32,8 +32,10 @@ import 'limited_box.dart';
 import 'animated_container.dart';
 import 'indexed_stack.dart';
 import 'banner.dart';
+import 'sized_box.dart';
 
 final List<MyDemo> allDemos = [
+  const SizedBoxDemo(title: "SizedBox"),
   const BannerDemo(title: "Banana"),
   const IndexedStackDemo(title: "IndexedStack"),
   const AnimatedContainerDemo(title: "AnimatedContainer"),
