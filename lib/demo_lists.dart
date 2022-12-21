@@ -30,8 +30,10 @@ import 'wrap.dart';
 import 'alert_dialog.dart';
 import 'limited_box.dart';
 import 'animated_container.dart';
+import 'indexed_stack.dart';
 
 final List<MyDemo> allDemos = [
+  const IndexedStackDemo(title: "IndexedStack"),
   const AnimatedContainerDemo(title: "AnimatedContainer"),
   const LimitedBoxDemo(title: "LimitedBox"),
   const AlertDialogDemo(title: "AlertDialog"),
