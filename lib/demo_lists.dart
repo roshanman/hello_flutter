@@ -37,8 +37,10 @@ import 'fractionally_sizebox.dart';
 import 'dismissble.dart';
 import 'buttons.dart';
 import 'grid_paper.dart';
+import 'inkwell.dart';
 
 final List<MyDemo> allDemos = [
+  const InkWellDemo(title: "Inkwell"),
   const GridePaperDemo(title: "GridPaper"),
   const ButtonsDemo(title: "Buttons"),
   const DismissbleDemo(title: "Dismissable"),
