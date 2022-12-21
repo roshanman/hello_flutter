@@ -36,8 +36,10 @@ import 'sized_box.dart';
 import 'fractionally_sizebox.dart';
 import 'dismissble.dart';
 import 'buttons.dart';
+import 'grid_paper.dart';
 
 final List<MyDemo> allDemos = [
+  const GridePaperDemo(title: "GridPaper"),
   const ButtonsDemo(title: "Buttons"),
   const DismissbleDemo(title: "Dismissable"),
   const FractionallySizeBoxDemo(title: "FractionallySizeBox"),
