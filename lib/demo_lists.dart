@@ -29,8 +29,10 @@ import 'will_pop_scope.dart';
 import 'wrap.dart';
 import 'alert_dialog.dart';
 import 'limited_box.dart';
+import 'animated_container.dart';
 
 final List<MyDemo> allDemos = [
+  const AnimatedContainerDemo(title: "AnimatedContainer"),
   const LimitedBoxDemo(title: "LimitedBox"),
   const AlertDialogDemo(title: "AlertDialog"),
   const WillPopScopeDemo(title: "WillPopScope"),
