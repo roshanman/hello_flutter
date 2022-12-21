@@ -34,8 +34,10 @@ import 'indexed_stack.dart';
 import 'banner.dart';
 import 'sized_box.dart';
 import 'fractionally_sizebox.dart';
+import 'dismissble.dart';
 
 final List<MyDemo> allDemos = [
+  const DismissbleDemo(title: "Dismissable"),
   const FractionallySizeBoxDemo(title: "FractionallySizeBox"),
   const SizedBoxDemo(title: "SizedBox"),
   const BannerDemo(title: "Banana"),
