@@ -28,8 +28,10 @@ import 'animated_icon.dart';
 import 'will_pop_scope.dart';
 import 'wrap.dart';
 import 'alert_dialog.dart';
+import 'limited_box.dart';
 
 final List<MyDemo> allDemos = [
+  const LimitedBoxDemo(title: "LimitedBox"),
   const AlertDialogDemo(title: "AlertDialog"),
   const WillPopScopeDemo(title: "WillPopScope"),
   const WrapDemo(title: "Wrap"),
