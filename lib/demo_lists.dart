@@ -38,8 +38,10 @@ import 'dismissble.dart';
 import 'buttons.dart';
 import 'grid_paper.dart';
 import 'inkwell.dart';
+import 'refresh_indicator.dart';
 
 final List<MyDemo> allDemos = [
+  const RefreshIndicatorDemo(title: "RefreshIncicator"),
   const InkWellDemo(title: "Inkwell"),
   const GridePaperDemo(title: "GridPaper"),
   const ButtonsDemo(title: "Buttons"),
