@@ -25,8 +25,10 @@ import 'selectable_text.dart';
 import 'snakebar.dart';
 import 'drawer.dart';
 import 'animated_icon.dart';
+import 'will_pop_scope.dart';
 
 final List<MyDemo> allDemos = [
+  const WillPopScopeDemo(title: "WillPopScope"),
   const AnimatedIconDemo(title: "AnimatedIcon"),
   const DrawerDemo(title: "Drawer"),
   const SnackBarDemo(title: "SnackBar"),
