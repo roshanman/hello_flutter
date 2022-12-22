@@ -42,8 +42,10 @@ import 'refresh_indicator.dart';
 import 'animated_switcher.dart';
 import 'draggable_scrollable_sheet.dart';
 import 'chips.dart';
+import 'animated_cross_fade.dart';
 
 final List<MyDemo> allDemos = [
+  const AnimatedCrossFadeDemo(title: "AnimatedCrossFade"),
   const ChipsDemo(title: "Chips"),
   const DraggableScrollableSheetDemo(title: "DraggableScrollableSheet"),
   const AnimatedSwitcherDemo(title: "AnimatedSwitcher"),
