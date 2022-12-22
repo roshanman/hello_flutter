@@ -93,9 +93,9 @@ final List<MyDemo> allDemos = [
   const HeroDemo(title: "Hero"),
   const FadeInImageDemo(title: "FadeImage"),
   const InteractiveViewerDemo(title: "InteractiveViewer"),
-  ...List.generate(20, (index) {
-    return BaseDemo(
-      title: "Demo $index",
-    );
-  }),
+  // ...List.generate(20, (index) {
+  //   return BaseDemo(
+  //     title: "Demo $index",
+  //   );
+  // }),
 ];
