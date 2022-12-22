@@ -43,8 +43,10 @@ import 'animated_switcher.dart';
 import 'draggable_scrollable_sheet.dart';
 import 'chips.dart';
 import 'animated_cross_fade.dart';
+import 'backdrop_filter.dart';
 
 final List<MyDemo> allDemos = [
+  const BackdropFilterDemo(title: "BackdropFilter"),
   const AnimatedCrossFadeDemo(title: "AnimatedCrossFade"),
   const ChipsDemo(title: "Chips"),
   const DraggableScrollableSheetDemo(title: "DraggableScrollableSheet"),
