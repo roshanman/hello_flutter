@@ -45,8 +45,10 @@ import 'chips.dart';
 import 'animated_cross_fade.dart';
 import 'backdrop_filter.dart';
 import 'fitted_box.dart';
+import 'check_box.dart';
 
 final List<MyDemo> allDemos = [
+  const CheckBoxDemo(title: "CheckBox"),
   const FittedBoxDemo(title: "FittedBox"),
   const BackdropFilterDemo(title: "BackdropFilter"),
   const AnimatedCrossFadeDemo(title: "AnimatedCrossFade"),
