@@ -46,8 +46,10 @@ import 'animated_cross_fade.dart';
 import 'backdrop_filter.dart';
 import 'fitted_box.dart';
 import 'check_box.dart';
+import 'badge.dart';
 
 final List<MyDemo> allDemos = [
+  const BadgeDemo(title: "Badge"),
   const CheckBoxDemo(title: "CheckBox"),
   const FittedBoxDemo(title: "FittedBox"),
   const BackdropFilterDemo(title: "BackdropFilter"),
