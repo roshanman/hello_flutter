@@ -40,8 +40,10 @@ import 'grid_paper.dart';
 import 'inkwell.dart';
 import 'refresh_indicator.dart';
 import 'animated_switcher.dart';
+import 'draggable_scrollable_sheet.dart';
 
 final List<MyDemo> allDemos = [
+  const DraggableScrollableSheetDemo(title: "DraggableScrollableSheet"),
   const AnimatedSwitcherDemo(title: "AnimatedSwitcher"),
   const RefreshIndicatorDemo(title: "RefreshIncicator"),
   const InkWellDemo(title: "Inkwell"),
