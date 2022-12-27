@@ -47,8 +47,10 @@ import 'backdrop_filter.dart';
 import 'fitted_box.dart';
 import 'check_box.dart';
 import 'badge.dart';
+import 'directionality.dart';
 
 final List<MyDemo> allDemos = [
+  const DirectionalityDemo(title: "Directionality"),
   const BadgeDemo(title: "Badge"),
   const CheckBoxDemo(title: "CheckBox"),
   const FittedBoxDemo(title: "FittedBox"),
