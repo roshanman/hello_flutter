@@ -48,8 +48,10 @@ import 'fitted_box.dart';
 import 'check_box.dart';
 import 'badge.dart';
 import 'directionality.dart';
+import 'floating_action_button.dart';
 
 final List<MyDemo> allDemos = [
+  const FloatingActionButtonDemo(title: "FloatingActionButton"),
   const DirectionalityDemo(title: "Directionality"),
   const BadgeDemo(title: "Badge"),
   const CheckBoxDemo(title: "CheckBox"),
