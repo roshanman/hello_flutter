@@ -49,8 +49,10 @@ import 'check_box.dart';
 import 'badge.dart';
 import 'directionality.dart';
 import 'floating_action_button.dart';
+import 'future_builder.dart';
 
 final List<MyDemo> allDemos = [
+  const FutureBuilderDemo(title: "FutureBuilder"),
   const FloatingActionButtonDemo(title: "FloatingActionButton"),
   const DirectionalityDemo(title: "Directionality"),
   const BadgeDemo(title: "Badge"),
