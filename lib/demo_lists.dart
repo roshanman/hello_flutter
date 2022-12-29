@@ -50,8 +50,10 @@ import 'badge.dart';
 import 'directionality.dart';
 import 'floating_action_button.dart';
 import 'future_builder.dart';
+import 'draggable.dart';
 
 final List<MyDemo> allDemos = [
+  const DraggableDemo(title: "Draggable"),
   const FutureBuilderDemo(title: "FutureBuilder"),
   const FloatingActionButtonDemo(title: "FloatingActionButton"),
   const DirectionalityDemo(title: "Directionality"),
