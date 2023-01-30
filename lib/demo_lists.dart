@@ -51,8 +51,10 @@ import 'directionality.dart';
 import 'floating_action_button.dart';
 import 'future_builder.dart';
 import 'draggable.dart';
+import 'ios_present_page.dart';
 
 final List<MyDemo> allDemos = [
+  const iOSPresentPageDemo(title: "iOS Present Page"),
   const DraggableDemo(title: "Draggable"),
   const FutureBuilderDemo(title: "FutureBuilder"),
   const FloatingActionButtonDemo(title: "FloatingActionButton"),
