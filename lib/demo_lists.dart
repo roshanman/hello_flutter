@@ -53,8 +53,10 @@ import 'future_builder.dart';
 import 'draggable.dart';
 import 'ios_present_page.dart';
 import 'value_listenable_builder.dart';
+import 'notification_listener.dart';
 
 final List<MyDemo> allDemos = [
+  const NotificationListenerWidgetDemo(title: "NotificationListener"),
   ValueListenableBuilderWidgetDemo(title: "ValueListenableBuilder"),
   const iOSPresentPageDemo(title: "iOS Present Page"),
   const DraggableDemo(title: "Draggable"),
