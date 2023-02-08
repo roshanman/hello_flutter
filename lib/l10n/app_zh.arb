@@ -1,3 +1,7 @@
 {
-    "helloWorld": "你好，世界"
+    "helloWorld": "你好，世界",
+    "@helloWorld": {
+        "description": "The conventional newborn programmer greeting2222"
+      },
+    "hello": "你好 {userName}"
 }

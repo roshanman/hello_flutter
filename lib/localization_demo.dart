@@ -30,6 +30,7 @@ class _LocalizationDemoState extends State<LocalizationDemo> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(AppLocalizations.of(context).helloWorld, style: const TextStyle(fontSize: 40)),
+              Text(AppLocalizations.of(context).hello("Bob"), style: const TextStyle(fontSize: 40)),
               Localizations.override(
                 context: context,
                 locale: const Locale('en'),
@@ -37,6 +38,17 @@ class _LocalizationDemoState extends State<LocalizationDemo> {
                   builder: (context) {
                     // A toy example for an internationalized Material widget.
                     return Text(AppLocalizations.of(context).helloWorld,
+                        style: const TextStyle(fontSize: 40));
+                  },
+                ),
+              ),
+              Localizations.override(
+                context: context,
+                locale: const Locale('en'),
+                child: Builder(
+                  builder: (context) {
+                    // A toy example for an internationalized Material widget.
+                    return Text(AppLocalizations.of(context).hello("张休明"),
                         style: const TextStyle(fontSize: 40));
                   },
                 ),
