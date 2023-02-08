@@ -55,8 +55,10 @@ import 'ios_present_page.dart';
 import 'value_listenable_builder.dart';
 import 'notification_listener.dart';
 import 'stateful_widget_life_cycle.dart';
+import 'localization_demo.dart';
 
 final List<MyDemo> allDemos = [
+  const LocalizationDemo(title: "Localization Demo"),
   const StatefulWidgetLifeCycle(title: "StatefulWidget Life Cycle"),
   const NotificationListenerWidgetDemo(title: "NotificationListener"),
   ValueListenableBuilderWidgetDemo(title: "ValueListenableBuilder"),
