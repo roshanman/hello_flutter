@@ -38,19 +38,10 @@ class ButtonsDemo extends BaseDemo {
             onPressed: () {},
           ),
           const SizedBox(height: 10),
-          RaisedButton(
-            onPressed: () {},
-            child: const Text("RaisedButton Deprecated"),
-          ),
           const SizedBox(height: 10),
           OutlinedButton(
             onPressed: () {},
             child: const Text("OutlinedButton"),
-          ),
-          const SizedBox(height: 10),
-          FlatButton(
-            onPressed: () {},
-            child: const Text("FlatButton Deprecated"),
           ),
           const SizedBox(height: 10),
           const CloseButton(),

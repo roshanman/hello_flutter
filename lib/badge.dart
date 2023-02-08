@@ -1,6 +1,6 @@
 import 'base_demo.dart';
 import 'package:flutter/material.dart';
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as my_badge;
 
 class BadgeDemo extends BaseDemo {
   const BadgeDemo({Key? key, required String title}) : super(key: key, title: title);
@@ -8,7 +8,7 @@ class BadgeDemo extends BaseDemo {
   @override
   Widget bodyWidget({required BuildContext context}) {
     return Center(
-      child: Badge(
+      child: my_badge.Badge(
         // shape: BadgeShape.square,
         badgeContent: const Text(
           "18",
