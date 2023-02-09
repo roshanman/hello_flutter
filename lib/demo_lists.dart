@@ -56,8 +56,12 @@ import 'value_listenable_builder.dart';
 import 'notification_listener.dart';
 import 'stateful_widget_life_cycle.dart';
 import 'localization_demo.dart';
+import 'tabbar.dart';
+import 'tabbar_navigation_demo.dart';
 
 final List<MyDemo> allDemos = [
+  const TabbarNavigationDemo(title: "Tab+Navigation"),
+  const TabbarControllerDemo(title: "DefaultTabController"),
   const LocalizationDemo(title: "Localization Demo"),
   const StatefulWidgetLifeCycle(title: "StatefulWidget Life Cycle"),
   const NotificationListenerWidgetDemo(title: "NotificationListener"),
