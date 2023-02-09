@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'demo_lists.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'theme_demo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,14 +13,23 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'My Flutter Demos'),
+    return ValueListenableBuilder(
+      valueListenable: themeNotifier,
+      builder: (context, ThemeMode value, child) {
+        return MaterialApp(
+          title: 'Flutter Demo',
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+          darkTheme: ThemeData(
+            primarySwatch: Colors.blueGrey,
+          ),
+          themeMode: value,
+          home: const MyHomePage(title: 'My Flutter Demos'),
+        );
+      },
     );
   }
 }

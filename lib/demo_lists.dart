@@ -58,8 +58,10 @@ import 'stateful_widget_life_cycle.dart';
 import 'localization_demo.dart';
 import 'tabbar.dart';
 import 'tabbar_navigation_demo.dart';
+import 'theme_demo.dart';
 
 final List<MyDemo> allDemos = [
+  const ThemeDemo(title: "切换主题"),
   const TabbarNavigationDemo(title: "Tab+Navigation"),
   const TabbarControllerDemo(title: "DefaultTabController"),
   const LocalizationDemo(title: "Localization Demo"),
