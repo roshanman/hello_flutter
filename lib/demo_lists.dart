@@ -59,8 +59,10 @@ import 'localization_demo.dart';
 import 'tabbar.dart';
 import 'tabbar_navigation_demo.dart';
 import 'theme_demo.dart';
+import 'list_wheel_scrollview.dart';
 
 final List<MyDemo> allDemos = [
+  const ListWheelScrollViewDemo(title: "ListWheelScrollView"),
   const ThemeDemo(title: "切换主题"),
   const TabbarNavigationDemo(title: "Tab+Navigation"),
   const TabbarControllerDemo(title: "DefaultTabController"),
